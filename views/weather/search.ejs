@@ -1,0 +1,39 @@
+<h3>The Weather is popping this <%= result[0].current.day %> 
+    in <%= result[0].location.name %>.</h3>
+<p>
+    Current Temp: <%= result[0].current.temperature %><br/>
+    Feels Like: <%= result[0].current.feelslike %><br/>
+    Humidity: <%= result[0].current.humidity %><br/>
+</p>
+
+    <h4>5 day Forecast</h4>
+    <h5><%= result[0].forecast[0].day %></h5>
+    <p><%= result[0].forecast[0].skytextday %><br/>
+        High: <%= result[0].forecast[0].high %><br/>
+        Low: <%= result[0].forecast[0].low %><br/>
+        Precipitation: <%= result[0].forecast[0].precip %>% Chance
+    </p>
+    <h5><%= result[0].forecast[1].day %></h5>
+    <p><%= result[0].forecast[1].skytextday %><br/>
+        High: <%= result[0].forecast[1].high %><br/>
+        Low: <%= result[0].forecast[1].low %><br/>
+        Precipitation: <%= result[0].forecast[1].precip %>% Chance
+    </p>
+    <h5><%= result[0].forecast[2].day %></h5>
+    <p><%= result[0].forecast[2].skytextday %><br/>
+        High: <%= result[0].forecast[2].high %><br/>
+        Low: <%= result[0].forecast[2].low %><br/>
+        Precipitation: <%= result[0].forecast[2].precip %>% Chance
+    </p>
+    <h5><%= result[0].forecast[3].day %></h5>
+    <p><%= result[0].forecast[3].skytextday %><br/>
+        High: <%= result[0].forecast[3].high %><br/>
+        Low: <%= result[0].forecast[3].low %><br/>
+        Precipitation: <%= result[0].forecast[3].precip %>% Chance
+    </p3>
+    <h5><%= result[0].forecast[4].day %></h5>
+    <p><%= result[0].forecast[4].skytextday %><br/>
+        High: <%= result[0].forecast[4].high %><br/>
+        Low: <%= result[0].forecast[4].low %><br/>
+        Precipitation: <%= result[0].forecast[4].precip %>% Chance
+    </p>
