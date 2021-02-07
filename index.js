@@ -3,7 +3,6 @@ const express = require('express')
 const app = express()
 const ejs = require('ejs')
 const ejsLayouts = require('express-ejs-layouts')
-const fs = require('fs')
 const weather = require('weather-js')
 
 //middleware
@@ -19,7 +18,7 @@ app.get('/weather', (req,res)=>{
     let zipcode = req.query.zipcode
     weather.find({search: zipcode , degreeType: 'F'}, function(err, result) {
         if(err) console.log(err);
-        res.render('./weather/search.ejs', {result})
+        res.render('./weather/search', {result})
       });
 })
 
